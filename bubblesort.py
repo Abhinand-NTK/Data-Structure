@@ -1,4 +1,4 @@
-#code for the bubble sort 
+code for the bubble sort 
 def bubblesort(arr):
 
     length = len(arr)

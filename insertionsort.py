@@ -1,17 +1,17 @@
-# def insertionsort(arr):
+def insertionsort(arr):
 
-#     for i in range(len(arr)):
-#         key = arr[i]
+    for i in range(len(arr)):
+        key = arr[i]
 
-#         j = i - 1
-#         while j>=0 and key < arr[j]:
-#             arr[j+1]=arr[j]
-#             j-=1
-#         arr[j+1] =  key
+        j = i - 1
+        while j>=0 and key < arr[j]:
+            arr[j+1]=arr[j]
+            j-=1
+        arr[j+1] =  key
 
-# arr = [5,64,6,7,68,68,685,-54,-5454]
-# insertionsort(arr)
-# print("The sorterd array is :--",arr)
+arr = [5,64,6,7,68,68,685,-54,-5454]
+insertionsort(arr)
+print("The sorterd array is :--",arr)
 
 # def bubblesort(arr):
 
