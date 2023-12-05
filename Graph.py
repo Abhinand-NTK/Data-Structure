@@ -71,3 +71,37 @@ if __name__ == '__main__':
 
 
 
+from collections import defaultdict
+
+class Graph:
+
+
+	def __init__(self):
+
+		self.graph = defaultdict(list)
+
+	def addelement(self,u,v):
+		
+		self.graph[u].append(v)
+
+	def bfs(self,s):
+
+		visited = [False]*(max(self.graph)+1)
+
+		q = []
+
+		q.append(s)
+
+		visited[s] = True
+
+		while q:
+
+			s = q.pop(0)
+
+			for i in range(self.graph[s]):
+				print(s,end=" ")
+				if visited[i] == False:
+					q.append(i)
+					visited[i]= True
+
+
